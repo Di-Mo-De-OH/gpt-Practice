@@ -8,6 +8,7 @@ from langchain.callbacks import StreamingStdOutCallbackHandler
 from langchain.retrievers import WikipediaRetriever
 from langchain.schema import BaseOutputParser
 
+class JsonOutputParser(BaseOutputParser):
     def parse(self,text):
         text = (
                 text.replace("```", "").replace("json", "").replace(", ]", "]").replace(", }", "}")
