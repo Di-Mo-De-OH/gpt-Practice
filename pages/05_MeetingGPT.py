@@ -1,3 +1,6 @@
 import streamlit as st
 
-st.title("Meeting GPT")
+st.set_page_config(
+    page_title ="MeetingGPT",
+    
+)
